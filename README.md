@@ -1,4 +1,4 @@
-# 📚 LibraryMaster Pro Database 🏛️
+# 📚 The Bryan Mwalwala Library Database - Patent Pending! 🏛️
 
 ## 🎯 Project Overview
 A **full-featured MySQL database** for modern libraries, tracking books, members, loans, and more with industrial-strength data integrity!  
@@ -45,7 +45,7 @@ erDiagram
 
 ## 💾 Sample Data Included
 ```sql
--- Real sample data from your library system
+-- Real sample data from our library system
 INSERT INTO books (title, isbn, publisher_id, available_copies) VALUES
 ('Pride and Prejudice', '9780141439518', 1, 3),  -- Jane Austen classic
 ('1984', '9780451524935', 2, 1),                 -- Orwell's dystopia
