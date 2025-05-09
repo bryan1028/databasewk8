@@ -16,7 +16,7 @@ A **full-featured MySQL database** for modern libraries, tracking books, members
 git clone https://github.com/yourusername/library-management-db.git
 
 # 2. Deploy the database (MySQL required)
-mysql -u root -p < library_db.sql
+mysql -u root -p < library.sql
 ```
 
 ## 🗄️ Database Schema
@@ -45,13 +45,18 @@ erDiagram
 
 ## 💾 Sample Data Included
 ```sql
--- Premium dataset example
-INSERT INTO books VALUES
-(1, 'The DevOps Handbook', '9781942788003', 1, 5, 3);
--- 50+ more high-quality records!
-```
+-- Real sample data from your library system
+INSERT INTO books (title, isbn, publisher_id, available_copies) VALUES
+('Pride and Prejudice', '9780141439518', 1, 3),  -- Jane Austen classic
+('1984', '9780451524935', 2, 1),                 -- Orwell's dystopia
+('Beloved', '9781400033416', 2, 4);               -- Toni Morrison masterpiece
+
+INSERT INTO loans (book_id, member_id, status) VALUES
+(1, 1, 'On Loan'),   -- John Smith has Austen
+(2, 2, 'Returned');  -- Emily Johnson returned 1984
 
 ---
+```
 
 🔧 **Built with**: MySQL Workbench 8.0  
 📜 **License**: MIT  
